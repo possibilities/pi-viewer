@@ -12,7 +12,7 @@ if (!existsSync(entrypoint)) {
 	process.exit(1);
 }
 if (!existsSync(resolve(piRoot, "node_modules"))) {
-	process.stderr.write("Pi dependencies are not installed. Run: npm ci --ignore-scripts --prefix pi\n");
+	process.stderr.write("Pi dependencies are not installed. Run: npm run setup\n");
 	process.exit(1);
 }
 

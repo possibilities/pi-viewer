@@ -8,7 +8,7 @@
     "pi-viewer": "bin/pi-viewer.ts"
   },
   "scripts": {
-    "setup": "git submodule update --init && npm ci --ignore-scripts --prefix pi",
+    "setup": "git submodule update --init && cd pi && npm ci --ignore-scripts",
     "start": "bun run bin/pi-viewer.ts"
   },
   "engines": {
