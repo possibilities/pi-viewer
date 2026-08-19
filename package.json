@@ -1,0 +1,19 @@
+{
+  "name": "pi-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chromeless, live, read-only viewer for Pi session transcripts",
+  "type": "module",
+  "bin": {
+    "pi-viewer": "bin/pi-viewer.ts"
+  },
+  "scripts": {
+    "setup": "git submodule update --init && npm ci --ignore-scripts --prefix pi",
+    "start": "bun run bin/pi-viewer.ts"
+  },
+  "engines": {
+    "bun": ">=1.3.0",
+    "node": ">=24.0.0"
+  },
+  "license": "MIT"
+}
